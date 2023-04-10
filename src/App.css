@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* #root {
+  width: 100%;
+  margin-top: 20px;
+} */
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+#hero {
+  padding: 0 1rem;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.pageTitle {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.1;
+  padding: 0.8rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+input,
+textarea {
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 0.3rem;
+  outline: 0;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+input::placeholder {
+  font-size: 0.8rem;
+}
+textarea::placeholder {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 8rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #646cffaa;
+  transition: 0.3s;
+}
+
+label {
+  font-weight: 600;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.error {
+  /* background-color: #646cffaa; */
+
+  border: 1px solid #d7263d;
+  border-radius: 7px;
+  padding: 0.1rem;
+  margin-top: 1rem;
+  transition: opacity 5s;
+  text-align: center;
+  animation-name: bounce;
+  animation-duration: 0.5s;
+  animation-delay: 0.25s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateX(0px);
+    timing-function: ease-in;
+  }
+  37% {
+    transform: translateX(5px);
+    timing-function: ease-out;
+  }
+  55% {
+    transform: translateX(-5px);
+    timing-function: ease-in;
+  }
+  73% {
+    transform: translateX(4px);
+    timing-function: ease-out;
+  }
+  82% {
+    transform: translateX(-4px);
+    timing-function: ease-in;
+  }
+  91% {
+    transform: translateX(2px);
+    timing-function: ease-out;
+  }
+  96% {
+    transform: translateX(-2px);
+    timing-function: ease-in;
+  }
+  100% {
+    transform: translateX(0px);
+    timing-function: ease-in;
+  }
+}

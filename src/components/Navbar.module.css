@@ -1,0 +1,74 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  height: 130px;
+  letter-spacing: 2px;
+  padding: 0 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    font-size: 0.7rem;
+  }
+}
+
+.logo {
+  font-family: "Bangers", cursive;
+  font-size: 3rem;
+}
+
+.brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  padding: 1rem;
+  border: 4px dashed white;
+  font-weight: 700;
+
+  /* border-radius: 50%; */
+}
+
+.links_list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #000;
+}
+
+.active {
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.logoutBtn {
+  padding: 0.4rem;
+}
+
+.userInfo {
+  /* background-color: #242424; */
+  /* border: 2px solid #fff; */
+  border-radius: 3px;
+  padding: 0.2rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 14px;
+  font-size: 0.6rem;
+}
