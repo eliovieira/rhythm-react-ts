@@ -16,3 +16,5 @@ Welcome to the RHYTHM music project!
 **AND** add/delete/edit my own beats
 
 #React #TypeScript #Firebase
+
+![Register form](register.png)
