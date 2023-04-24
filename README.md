@@ -6,11 +6,11 @@ Welcome to the RHYTHM music project!
 
 ### **Features**
 
-**AS A** non-registered user  
-**I WANT** to view/preview the beats (through Youtube videos)
+**AS A** non-registered user  </br>
+**I WANT** to view/preview the beats (through Youtube videos) </br>
 **AND** be able to register/login
 
-**AS A** registered user  
+**AS A** registered user  </br>
 **I WANT** to view/preview the beats (through Youtube videos) </br>
 **AND** be able to get the download link for each instrumental</br>
 **AND** add/delete/edit my own beats
