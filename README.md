@@ -15,5 +15,4 @@ Welcome to the RHYTHM music project!
 **AND** be able to get the download link for each instrumental
 **AND** add/delete/edit my own beats
 
-**TECHNOLOGIES USED**
-React, TypeScript, Firebase
+#React #TypeScript #Firebase
