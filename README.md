@@ -15,9 +15,11 @@ Welcome to the RHYTHM music project!
 **AND** be able to get the download link for each instrumental</br>
 **AND** add/delete/edit my own beats
 
-#React #TypeScript #Firebase
 
 ![Register form](register.png)
 
 
 ![My beats](mybeats.png)
+
+
+#React #TypeScript #Firebase
