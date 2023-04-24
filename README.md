@@ -18,3 +18,6 @@ Welcome to the RHYTHM music project!
 #React #TypeScript #Firebase
 
 ![Register form](register.png)
+
+
+![My beats](mybeats.png)
