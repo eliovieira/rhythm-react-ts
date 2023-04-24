@@ -1,7 +1,5 @@
 # RHYTHM music project
 
-Welcome to the RHYTHM music project!
-
 ![RHYTHM main page](design.png)
 
 ### **Features**
