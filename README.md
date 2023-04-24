@@ -2,7 +2,7 @@
 
 Welcome to the RHYTHM music project!
 
-![MMT at the Movies Design](design.png)
+![RHYTHM main page](design.png)
 
 ### **Features**
 
