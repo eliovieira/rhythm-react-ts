@@ -7,10 +7,10 @@ Welcome to the RHYTHM music project!
 ### **Features**
 
 **AS A** non-registered user  
-**I WANT** to view/preview the beats(through Youtube videos)
-**AND** Be able to register/login
+**I WANT** to view/preview the beats (through Youtube videos)
+**AND** be able to register/login
 
 **AS A** registered user  
-**I WANT** to view the beats
-**THEN** I can see the download link for each instrumental available in the site
-**AND** I can add/delete/edit my own beats
+**I WANT** to view/preview the beats (through Youtube videos)
+**AND** be able to get the download link for each instrumental
+**AND** add/delete/edit my own beats
