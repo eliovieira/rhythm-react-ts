@@ -26,4 +26,4 @@ Welcome to the RHYTHM music project!
 
  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>
   <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="Typescript" alt="Typescript" width="40" height="40"/>
-    <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>
+    <img src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>
