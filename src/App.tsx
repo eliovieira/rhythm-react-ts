@@ -106,9 +106,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </section>
-        {/* <footer>
         <Footer />
-      </footer> */}
       </BrowserRouter>
     </LoginContext.Provider>
   );

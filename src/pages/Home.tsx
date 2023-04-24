@@ -24,7 +24,7 @@ const Home = (props: Props) => {
       </span>
 
       <div className={styles.blogList}>
-        {props.isLoading && <span>Loading...</span>}
+        {props.isLoading && <span className={styles.loading}>Loading...</span>}
         {props.beatList.map((blogIndividual: any) => {
           return (
             <div key={blogIndividual.id}>

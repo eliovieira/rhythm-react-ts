@@ -91,6 +91,7 @@ const Edit = (props: Props) => {
       <form onSubmit={(e) => handleEdit(e)}>
         <label>Title</label>
         <input
+          maxLength={15}
           placeholder="Insert beat's name"
           type="text"
           value={title}
@@ -103,6 +104,7 @@ const Edit = (props: Props) => {
           value={link}
           onChange={(e) => setLink(e.target.value)}
           required
+          disabled
         />
         <label>Genre</label>
         <select

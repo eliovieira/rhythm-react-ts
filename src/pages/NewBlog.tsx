@@ -43,33 +43,49 @@ const NewBlog = (props: Props) => {
 
   let navigate = useNavigate();
 
+  const validateYouTubeUrl = (urlToParse: string) => {
+    if (urlToParse) {
+      var regExp =
+        /^(?:https?:\/\/)?(?:m\.|www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))((\w|-){11})(?:\S+)?$/;
+      if (urlToParse.match(regExp)) {
+        return true;
+      }
+    }
+    return false;
+  };
+
   //console.log(props.authUser);
   const createNewBlog = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    await addDoc(props.blogsCollectionRef, {
-      title: title,
-      bpm: bpm,
-      beatKey: beatKey,
-      genre: genre,
-      uid: props.authUser.uid,
-      url: link,
-      uploadDate: new Date(),
-    })
-      .then((blog) => {
-        console.log(blog);
-        setTitle("");
-        setBpm(0);
-        setBeatKey("");
-        setGenre("");
-        setLink("");
-        props.getBeatList();
-        navigate("/myposts");
+    if (validateYouTubeUrl(title)) {
+      await addDoc(props.blogsCollectionRef, {
+        title: title[0].toUpperCase() + title.slice(1),
+        bpm: bpm,
+        beatKey: beatKey,
+        genre: genre,
+        uid: props.authUser.uid,
+        url: link,
+        uploadDate: new Date(),
       })
-      .catch((error) => {
-        console.log(error);
-        setError(error.message);
-      });
+        .then((blog) => {
+          console.log(blog);
+          setTitle("");
+          setBpm(0);
+          setBeatKey("");
+          setGenre("");
+          setLink("");
+          props.getBeatList();
+          navigate("/myposts");
+        })
+        .catch((error) => {
+          console.log(error);
+          setError(error.message);
+        });
+    } else {
+      setError("Must be a valid Youtube link");
+      return;
+    }
   };
 
   useEffect(() => {
@@ -84,6 +100,7 @@ const NewBlog = (props: Props) => {
       <form onSubmit={(e) => createNewBlog(e)}>
         <label>Title</label>
         <input
+          maxLength={15}
           placeholder="Insert beat's name"
           type="text"
           value={title}
@@ -131,8 +148,8 @@ const NewBlog = (props: Props) => {
           required
         />
         <button>Submit</button>
+        {error && <div className="error">{error}</div>}
       </form>
-      {error && <div className="error">{error}</div>}
     </>
   );
 };

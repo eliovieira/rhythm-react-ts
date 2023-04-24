@@ -5,15 +5,19 @@
   font-weight: 900;
   font-size: 0.9rem;
   text-transform: uppercase;
-  height: 130px;
+  padding: 1rem 0;
   letter-spacing: 2px;
-  padding: 0 1rem;
 }
 
 @media only screen and (max-width: 600px) {
   .navbar {
+    padding: 2rem 0;
     flex-direction: column;
-    font-size: 0.7rem;
+    gap: 20px;
+    line-height: 0px;
+    font-size: 0.8rem;
+
+    /* border: 0.5px solid #eee; */
   }
 }
 
@@ -55,20 +59,35 @@
   list-style: none;
 }
 
+@media only screen and (max-width: 600px) {
+  .menu {
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+}
+
 .logoutBtn {
   padding: 0.4rem;
+  margin-top: 0.5rem;
 }
 
 .userInfo {
   /* background-color: #242424; */
   /* border: 2px solid #fff; */
-  border-radius: 3px;
+
   padding: 0.2rem;
   font-weight: 700;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  line-height: 14px;
+  line-height: 0px;
   font-size: 0.6rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .userInfo {
+    line-height: 0px;
+    font-size: 0.5rem;
+  }
 }

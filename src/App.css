@@ -1,8 +1,9 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+  height: 100px;
+} */
 
 /* #root {
   width: 100%;
@@ -11,14 +12,8 @@
 
 .container {
   margin: 0 auto;
+  width: 100%;
   max-width: 1280px;
-}
-#hero {
-  padding: 0 1rem;
-}
-
-footer {
-  margin-top: auto;
 }
 
 .pageTitle {
@@ -32,11 +27,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-form {
-  margin: 0 auto;
-  max-width: 500px;
 }
 
 input,
@@ -104,6 +94,8 @@ label {
 }
 
 form {
+  margin: 0 auto;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 10px;
