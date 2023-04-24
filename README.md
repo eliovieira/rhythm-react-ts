@@ -14,3 +14,6 @@ Welcome to the RHYTHM music project!
 **I WANT** to view/preview the beats (through Youtube videos)
 **AND** be able to get the download link for each instrumental
 **AND** add/delete/edit my own beats
+
+**TECHNOLOGIES USED**
+React, TypeScript, Firebase
