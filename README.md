@@ -7,7 +7,7 @@ Welcome to the RHYTHM music project!
 ### **Features**
 
 **AS A** non-registered user  
-**I WANT** to view the beats(using youtube) and preview
+**I WANT** to view/preview the beats(through Youtube videos)
 **AND** Be able to register/login
 
 **AS A** registered user  
