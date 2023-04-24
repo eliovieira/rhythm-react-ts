@@ -12,7 +12,7 @@ Welcome to the RHYTHM music project!
 
 **AS A** registered user  
 **I WANT** to view/preview the beats (through Youtube videos) </br>
-**AND** be able to get the download link for each instrumental
+**AND** be able to get the download link for each instrumental</br>
 **AND** add/delete/edit my own beats
 
 #React #TypeScript #Firebase
